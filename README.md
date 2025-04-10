@@ -1,11 +1,22 @@
-# website-lab-js
+Lab 3 - Multipage Website
 
-group memebers
-  1. Edson Bwalya
-  2. Clavelous Kalumba
+## Group Members:
+- BWALYA EDSON 202143724424
 
-Website features
-  1. toggles group members
-  2. toggles theme fromm dark to white
-  3. has a real time clock created.
-  4. has the validated form
+- partner:CLAVELOUS KALUMBA 2021412300 
+
+
+
+## Page Descriptions:
+- *Home*: Introduces the company and provides navigation to other pages.
+- *Services*: Displays a grid of services offered by the company.
+- *Contact*: A form for visitors to contact the company.
+
+
+
+## Features Used:
+- *Selectors*: Used for styling various elements such as navigation, cards, and form fields.
+- *Flexbox*: Applied for layout in the home page.
+- *Grid*: Used for arranging service cards on the services page.
+- *Media Queries*: For responsive design at 1024px, 768px, and 480px breakpoints.
+- *Animation*: Button hover effect.

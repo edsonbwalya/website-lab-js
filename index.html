@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <button id="themeToggle" style="background-color: rgba(4, 92, 194, 0.733); color: white; border-radius: 10px; cursor: pointer; border: none;">Switch Theme</button>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+
+        </ul>
+        <div style="display: flex; font-size: 20px; margin-top: -10px;">
+            <p id="hours">10</p>
+            <p>:</p>
+            <p id="minutes">9</p>
+            <p>:</p>
+            <p id="seconds">12</p>
+            
+        </div>
+        
+    </nav>
+
+    <!-- Hero Banner Section -->
+    <section class="hero">
+        <h1>Welcome to progress enterprise</h1>
+        <p>We offer amazing services to help you succeed.</p>
+    </section>
+
+    <!-- Footer -->
+    <footer style="display: flex; justify-content: space-around;">
+        <div>
+            <h2>Team Members</h2>
+            <ul id="userList"></ul>
+            <button id="loadUsersBtn" style="background-color: #b7c0e9; color: black; height: 30px; border-radius: 10px; border: 1px solid #b7c0e9; cursor: pointer;">Load Users</button>
+        </div>
+        
+
+        <div class="faq-item">
+            <h3 class="question">What is this website about?</h3>
+            <p style="color: black;">This is a demo project for learning web development.</p>
+        </div>
+
+        <div>
+            <section class="intro">
+                <h2>About Us</h2>
+                <p>We specialize in creating amazing user experiences.</p>
+            </section>
+            <aside class="sidebar">
+                <div>
+                    <strong>Latest Updates</strong>
+                    Check out our latest blog posts and news.
+                </div>
+            </aside>
+        </div>
+    </footer>
+
+    <script>
+        var secondCounter = 12;
+        var minuteCounter = 9;
+        var hoursCounter = 10;
+
+        setInterval(()=>{
+            secondCounter = secondCounter + 1;
+            document.getElementById("seconds").innerHTML = secondCounter;
+            if(secondCounter === 59){
+                minuteCounter = minuteCounter + 1;
+                document.getElementById("minutes").innerHTML = minuteCounter;
+                secondCounter = 0;
+
+                if(minuteCounter === 59){
+                    hoursCounter = hoursCounter + 1;
+                    document.getElementById("hours").innerHTML = hoursCounter;
+                    minuteCounter = 0;
+                }
+            }
+        }, 1000);
+
+    </script>
+</body>
+</html>
+
